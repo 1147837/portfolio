@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshaya's Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #e0e5e5;
+    }
+
+    /* Animated background */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(45deg, #eff2f3, #b6b7b9, #7f7b7b, #b6b7b9, #eff2f3);
+      background-size: 400% 400%;
+      animation: gradientBG 20s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .navbar-brand {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 1.5rem;
+      color: #000;
+    }
+
+    .navbar-nav .nav-link {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1.1rem;
+    }
+
+    .navbar {
+      background-color: #5e5959f3;
+    }
+
+    footer {
+      color: #fff;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* Center items vertically */
+      padding: 10px 20px;
+      background-color: #5e5959f3;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .container p {
+      font-size: 2rem;
+      color: #555;
+      margin-top: 40px;
+      margin-left: 60px;
+    }
+
+    ul {
+      font-size: 25px;
+      color: #ede5e5;
+      list-style-type: none;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+     
+    }
+
+    .modal-content {
+      background-color: #f8f9fa;
+    }
+
+    .modal-footer {
+      background-color: #343a40;
+      color: #fff;
+      border-top: none;
+    }
+
+    .modal-footer button {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #212224;
+      margin-bottom: 20px;
+      margin-top: 0.5px;
+    }
+
+    .Picture {
+      max-width: 100%;
+      margin: 50px auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Akshaya's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./public/about.html" target="_blank">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/work-experience.html" target="_blank">Work Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/education.html" target="_blank">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/projects.html" target="_blank">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/certifications.html" target="_blank">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/skills.html" target="_blank">Skills</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <header class="mb-5">
+          <h2>Web Developer</h2>
+        </header>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/011/153/369/small_2x/3d-web-developer-working-on-project-illustration-png.png"
+          alt="Image" class="Picture">
+      </div>
+      <div class="col-md-6">
+        <div class="row justify-content-center">
+          <div class="col-md-40">
+            <p>
+              <ul>
+                <li>A recent Bachelor of Computer Applications graduate, with 4 months experience as an Associate Software Engineer at CGI.</li><br />
+                <li>Proficient in Angular, HTML, CSS, JavaScript, Bootstrap, React, Java, SpringBoot, RestApi, MongoDB, Git.,</li><br />
+                <li>Also Certified in Green Software and Agile for Software Development.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; All Rights Reserved</p>
+    <div>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Me</button>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Send</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS, jQuery and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
